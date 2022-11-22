@@ -2,9 +2,11 @@ The account indexing system provide the processing
 logic for incoming account data.
 
 ## How to start run in local environment:
-1. Get the data with .json format ready, you could put under the resources file
-2. Update the config.json in the resources file, make sure the processType is 'BATCH' and update the filePath to point to the data file
-3. Run the Executor.java's main method
+1. Make sure have [gradle](https://gradle.org/install/) and [java.8+](https://www.oracle.com/java/technologies/downloads/) installed on local
+2. Get the data with .json format ready, you could put under the resources file
+3. Update the config.json in the resources file, make sure the processType is 'BATCH' and update the filePath to point to the data file
+4. Execute ```./gradlew build``` to build project and generate protobuf classes
+5. Run the Executor.java's main method
 
 ## System pattern
 The code and project implement with java + gradle. This is one of most
