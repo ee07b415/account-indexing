@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package account;
+
+import "google/protobuf/any.proto";
+
+option java_package = "account.protos";
+
+message Account {
+  required string id = 1;
+  required string parentProgram = 2;
+  required string parentProgramSubType = 3;
+  required int64 tokens = 4;
+  required int64 callbackTimeMs = 5;
+  map<string, string> data = 6;
+  optional int32 version = 7;
+}
+
+message Accounts {
+  repeated Account accounts = 1;
+}
+
