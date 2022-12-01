@@ -6,7 +6,7 @@ logic for incoming account data.
 2. Get the data with .json format ready, you could put under the resources file
 3. Update the config.json in the resources file, make sure the processType is 'BATCH' and update the filePath to point to the data file
 4. Execute ```./gradlew build``` to build project and generate protobuf classes
-5. Run the Executor.java's main method
+5. Run the Executor.java's main method in IDE or ```./gradlew run``` in command line
 
 ## System pattern
 The code and project implement with java + gradle. This is one of most
